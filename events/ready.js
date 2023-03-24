@@ -28,7 +28,7 @@ module.exports = async (client) => {
   console.log(`[START] ${client.user.tag} Aktif!`);
   setInterval(async () => {
 
-    const activities = [`${client.guilds.cache.size} Sunucuya ${client.users.cache.size} Kullanıcıya Destek Veriyor.`, `${client.guilds.cache.size} Sunucuya ${client.users.cache.size} Kullanıcıya Destek Veriyor.`]
+    const activities = [`p!yardım ${client.guilds.cache.size} Sunucuya ${client.users.cache.size} Kullanıcıya Destek Veriyor.`, `${client.guilds.cache.size} Sunucuya ${client.users.cache.size} Kullanıcıya Destek Veriyor.`]
     const random = activities[
       Math.floor(Math.random() * activities.length)];
     client.user.setActivity(`${random}`)
