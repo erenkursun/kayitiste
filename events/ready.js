@@ -28,9 +28,9 @@ module.exports = async (client) => {
   console.log(`[START] ${client.user.tag} Aktif!`);
   setInterval(async () => {
 
-    const activities = ["discord.gg/altyapilar", "Raven <3 Lourity"]
+    const activities = [`${client.guilds.cache.size} Sunucuya ${client.users.cache.size} Kullanıcıya Destek Veriyor.`, `${client.guilds.cache.size} Sunucuya ${client.users.cache.size} Kullanıcıya Destek Veriyor.`]
     const random = activities[
       Math.floor(Math.random() * activities.length)];
     client.user.setActivity(`${random}`)
-  }, 16000);
+  }, 100000);
 };
