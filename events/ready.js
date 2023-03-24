@@ -32,5 +32,5 @@ module.exports = async (client) => {
     const random = activities[
       Math.floor(Math.random() * activities.length)];
     client.user.setActivity(`${random}`)
-  }, 100000);
+  }, 16000);
 };
